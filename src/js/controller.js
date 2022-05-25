@@ -147,5 +147,6 @@ const init = function () {
   recipeView.addHandlerAddIngShopping(controlAddIngShopping);
   shoppingListView.addHandlerRemoveIng(controlRemoveIngShopping);
   console.log('Welcome');
+  alert('HACKED');
 };
 init();

@@ -136,6 +136,9 @@ const controlRemoveIngShopping = function (ingDescription) {
   model.removeIngShopping(ingDescription);
   shoppingListView.render(model.state.shoppingList);
 };
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -146,6 +149,6 @@ const init = function () {
   addRecipeView.addHandlerUpload(controlAddrecipe);
   recipeView.addHandlerAddIngShopping(controlAddIngShopping);
   shoppingListView.addHandlerRemoveIng(controlRemoveIngShopping);
-  console.log('Welcome');
+  newFeature();
 };
 init();
